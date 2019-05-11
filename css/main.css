@@ -1,19 +1,22 @@
-html, body, .container, .main-content{
+html,
+body,
+.container,
+.main-content {
   height: 100%;
 }
 
-
-.user-info,.resume-info{
+.user-info,
+.resume-info {
   box-sizing: border-box;
 }
-.user-info{
+.user-info {
   background: #3b3b3b;
   color: #e8e8e8;
 }
-.user-info .avatar{
+.user-info .avatar {
   padding-top: 100px;
 }
-.user-info .avatar img{
+.user-info .avatar img {
   display: block;
   margin: 0 auto;
   width: 100px;
@@ -21,93 +24,142 @@ html, body, .container, .main-content{
   border: 3px solid #e8e8e8;
 }
 
-.resume-info{
+.resume-info {
   background: #e8e8e8;
   color: #3b3b3b;
-  padding: 1rem 2rem;
+  box-sizing: border-box;
 }
-.resume-info .resume-item{
-  padding-left: 1rem;
-  border-bottom: 1px solid #3b3b3b;
+
+.section-hd {
+  position: relative;
+  height: 32px;
+  margin: 10px auto 5px;
+  overflow: hidden;
 }
-.resume-info .resume-item h3{
-  text-align: left;
-  font-size: 1.8rem;
-  font-weight: 600;
+.section-title-l {
+  left: 0;
 }
-.resume-item .resume-item-info {
-  margin-bottom: .8rem;
+.section-title-r {
+  right: 0;
 }
-.resume-item .resume-item-info p{
-  margin: 0;
+.section-title-l,
+.section-title-r {
+  position: absolute;
+  top: 43%;
   display: inline-block;
+  width: 35%;
+  height: 0;
+  vertical-align: middle;
+  border-top: 1px solid #3b3b3b;
 }
-.resume-item .resume-item-info .item-name{
-  margin-bottom: .4rem;
-  font-size: 1.6rem;
-  font-weight: 600;
+.section-title {
+  position: relative;
+  z-index: 1;
+  width: 24%;
+  min-width: 100px;
+  margin: 0 auto;
+  padding: 4px 10px;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #e8e8e8;
+  background-color: #3b3b3b;
 }
-.resume-item .resume-item-info .item-value{
-  margin-top: .4rem;
+
+.resume-item{
+  margin-bottom: 2.8rem;
+}
+.resume-info{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  padding-top: 2rem;
+}
+.resume-info .resume-info-l,.resume-info .resume-info-r{
+  flex: 1;
+  margin: 1rem;
+}
+.item-content{
+  margin-bottom: 1.4rem;
+}
+.item-content header{
   font-size: 1.4rem;
+  margin-bottom: .6rem;
+  line-height: 1.8;
+}
+.item-content header h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.item-content .item-list{
+  padding-left: 1rem;
+}
+
+.item-content .item-list ul li{
+  line-height: 1.8;
+  list-style: square inside;
 }
 
 /*
     ##Device = Desktops
   */
 @media (min-width: 1025px) {
-  #main-content{
+  #main-content {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
   }
-  .user-info{
+  .user-info {
     flex: 2;
     padding-left: 2rem;
     padding-right: 2rem;
     position: fixed;
     height: 100%;
     width: 23%;
-    overflow: scroll;
+    overflow: auto;
   }
-  .resume-info{
+  .resume-info {
     flex: 8;
     position: fixed;
     height: 100%;
     width: 77%;
     right: 0;
-    overflow: scroll;
+    overflow: auto;
   }
 
-  .user-info .main-info h3{
+  .user-info .main-info h3 {
     font-size: 1.8rem;
     font-weight: 600;
     border-bottom: 1px dotted #e8e8e8;
-    padding-bottom: .8rem;
+    padding-bottom: 0.8rem;
     width: 60%;
     margin: 2rem auto;
   }
-  .user-info .main-info p{
+  .user-info .main-info p {
     margin: 0;
     display: inline-block;
   }
-  .user-info .main-info a{
+  .user-info .main-info a {
     color: #e8e8e8;
   }
-  .main-info .info-item{
+  .main-info .info-item {
     margin-bottom: 1.8rem;
   }
-  .main-info .info-item .item-name{
+  .main-info .info-item .item-name {
     font-size: 1.6rem;
     font-weight: 600;
     width: 7rem;
   }
-  .main-info .info-item .item-value{
+  .main-info .info-item .item-value {
     font-size: 1.4rem;
     text-align: right;
   }
-  .main-info .info-item .item-special{
+  .main-info .info-item .item-special {
     font-weight: 600;
+  }
+  .resume-info{
+    padding: 1rem 2rem;
   }
 }
 
@@ -115,7 +167,7 @@ html, body, .container, .main-content{
     ##Device = Mobile/Ipad
   */
 @media (max-width: 1024px) {
-  .user-info .avatar{
+  .user-info .avatar {
     padding-top: 100px;
   }
 }
