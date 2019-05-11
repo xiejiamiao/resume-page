@@ -1,0 +1,89 @@
+/* ==========
+  基本默认值
+  ===========*/
+  html {
+    font-size: 62.5%;
+    font-family: -apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #222;
+    background: #EEE;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* ==========
+    工具样式
+    ===========*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hiden {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.notify {
+    background: #ffd800;
+    color: #ff0000;
+    margin: 0;
+    line-height: 2;
+    text-align: center;
+}
+
+.notify p {
+    margin:0;
+}

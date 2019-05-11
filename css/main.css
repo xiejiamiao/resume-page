@@ -1,0 +1,88 @@
+html, body, .container, .main-content{
+  height: 100%;
+}
+
+
+.user-info{
+  background: #3b3b3b;
+  color: #e8e8e8;
+  box-sizing: border-box;
+}
+.user-info .avatar{
+  padding-top: 200px;
+}
+.user-info .avatar img{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #e8e8e8;
+}
+
+.resume-info{
+  background: #e8e8e8;
+  color: #3b3b3b;
+}
+
+/*
+    ##Device = Desktops
+  */
+@media (min-width: 1025px) {
+  #main-content{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+  }
+  .user-info{
+    flex: 2;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: fixed;
+    height: 100%;
+  }
+  .resume-info{
+    flex: 8;
+  }
+
+  .user-info .main-info h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: 1px dotted #e8e8e8;
+    padding-bottom: .8rem;
+    width: 60%;
+    margin: 2rem auto;
+  }
+  .user-info .main-info p{
+    margin: 0;
+    display: inline-block;
+  }
+  .user-info .main-info a{
+    color: #e8e8e8;
+  }
+  .main-info .info-item{
+    margin-bottom: 1.8rem;
+  }
+  .main-info .info-item .item-name{
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 7rem;
+  }
+  .main-info .info-item .item-value{
+    font-size: 1.4rem;
+    text-align: right;
+  }
+  .main-info .info-item .item-special{
+    font-weight: 600;
+  }
+
+  
+}
+
+/*
+    ##Device = Mobile/Ipad
+  */
+@media (max-width: 1024px) {
+  .user-info .avatar{
+    padding-top: 100px;
+  }
+}
