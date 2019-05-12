@@ -87,12 +87,12 @@ body,
 .item-content .item-list-title{
   line-height: 1.8;
 }
-.item-content .item-list{
+.item-content .item-list,.skill-content .skill-list{
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
 
-.item-content .item-list ul li{
+.item-content .item-list ul li,.skill-content .skill-list ul li{
   line-height: 1.8;
   list-style: square inside;
 }
@@ -100,6 +100,31 @@ body,
 .resume-info{
   padding: 1rem 2rem;
 }
+.resume-item .skill-content{
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+.resume-item .skill-content header{
+  background: linear-gradient(to right, #3b3b3b, #e8e8e8);
+  color: #e8e8e8;
+  line-height: 2;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.resume-item .skill-content header.degree-100{
+  width: 100%;
+}
+.resume-item .skill-content header.degree-80{
+  width: 80%;
+}
+.resume-item .skill-content header.degree-90{
+  width: 80%;
+}
+.resume-item .skill-content header.degree-70{
+  width: 70%;
+}
+
 
 /*
     ##Device = Desktops

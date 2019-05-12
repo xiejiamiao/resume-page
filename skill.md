@@ -21,4 +21,5 @@
 ## 其他
 1. 会操作RabbitMQ
 2. 会使用Git、SVN、Docker
+3. 常用工具：Visual Studio、Visual Studio Code、PowerShell/Term
 
