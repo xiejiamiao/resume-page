@@ -131,7 +131,7 @@ body,
 /*
     ##Device = Desktops
   */
-@media (min-width: 1025px) {
+@media (min-width: 1493px) {
   #main-content {
     display: flex;
     display: -webkit-flex;
