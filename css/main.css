@@ -124,7 +124,9 @@ body,
 .resume-item .skill-content header.degree-70{
   width: 70%;
 }
-
+.skill-content .skill-list{
+  margin-top: 1rem;
+}
 
 /*
     ##Device = Desktops
