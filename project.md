@@ -14,5 +14,26 @@
 
 
 ## 微信公众号开发
+### 项目职责
+1. 完成微信公众号对接项目开发
+2. 配合运维人员进行微信后台的开发参数配置
+3. 编写微信内使用的H5页面
 
-## 内部CMS与呼叫中心CRM
+### 主要使用技术/框架
+1. ASP.NET MVC
+2. SQL Server
+3. Redis
+4. RabbitMQ
+5. JSSDK
+
+## 内部CMS
+### 项目职责
+1. 搭建系统基础架构
+2. 根据业务需求完成功能开发
+
+### 主要使用技术/框架
+1. ASP.NET Core 2.X
+2. EntityFramework Core 
+3. Redis
+4. Bootstrap
+5. Serilog
