@@ -70,35 +70,35 @@ body,
 .resume-item{
   margin-bottom: 2.8rem;
 }
-.resume-info{
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  padding-top: 2rem;
-}
-.resume-info .resume-info-l,.resume-info .resume-info-r{
-  flex: 1;
-  margin: 1rem;
-}
+
 .item-content{
   margin-bottom: 1.4rem;
 }
 .item-content header{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: .6rem;
   line-height: 1.8;
+  position: relative;
 }
 .item-content header h3{
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 600;
+}
+.item-content .item-list-title{
+  line-height: 1.8;
 }
 .item-content .item-list{
   padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .item-content .item-list ul li{
   line-height: 1.8;
   list-style: square inside;
+}
+
+.resume-info{
+  padding: 1rem 2rem;
 }
 
 /*
@@ -158,8 +158,15 @@ body,
   .main-info .info-item .item-special {
     font-weight: 600;
   }
+
   .resume-info{
-    padding: 1rem 2rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+  }
+  .resume-info .resume-info-l,.resume-info .resume-info-r{
+    flex: 1;
+    margin: 1rem;
   }
 }
 
@@ -170,4 +177,6 @@ body,
   .user-info .avatar {
     padding-top: 100px;
   }
+
+  
 }
