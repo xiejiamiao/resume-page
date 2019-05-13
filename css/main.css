@@ -67,44 +67,46 @@ body,
   background-color: #3b3b3b;
 }
 
-.resume-item{
+.resume-item {
   margin-bottom: 2.8rem;
 }
 
-.item-content{
+.item-content {
   margin-bottom: 1.4rem;
 }
-.item-content header{
+.item-content header {
   font-size: 1.3rem;
-  margin-bottom: .6rem;
+  margin-bottom: 0.6rem;
   line-height: 1.8;
   position: relative;
 }
-.item-content header h3{
+.item-content header h3 {
   font-size: 1.4rem;
   font-weight: 600;
 }
-.item-content .item-list-title{
+.item-content .item-list-title {
   line-height: 1.8;
 }
-.item-content .item-list,.skill-content .skill-list{
+.item-content .item-list,
+.skill-content .skill-list {
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
 
-.item-content .item-list ul li,.skill-content .skill-list ul li{
+.item-content .item-list ul li,
+.skill-content .skill-list ul li {
   line-height: 1.8;
   list-style: square inside;
 }
 
-.resume-info{
+.resume-info {
   padding: 1rem 2rem;
 }
-.resume-item .skill-content{
+.resume-item .skill-content {
   box-sizing: border-box;
   margin-bottom: 2rem;
 }
-.resume-item .skill-content header{
+.resume-item .skill-content header {
   background: linear-gradient(to right, #3b3b3b, #e8e8e8);
   color: #e8e8e8;
   line-height: 2;
@@ -112,26 +114,26 @@ body,
   font-size: 1.4rem;
   font-weight: 600;
 }
-.resume-item .skill-content header.degree-100{
+.resume-item .skill-content header.degree-100 {
   width: 100%;
 }
-.resume-item .skill-content header.degree-80{
+.resume-item .skill-content header.degree-80 {
   width: 80%;
 }
-.resume-item .skill-content header.degree-90{
+.resume-item .skill-content header.degree-90 {
   width: 80%;
 }
-.resume-item .skill-content header.degree-70{
+.resume-item .skill-content header.degree-70 {
   width: 70%;
 }
-.skill-content .skill-list{
+.skill-content .skill-list {
   margin-top: 1rem;
 }
 
 /*
     ##Device = Desktops
   */
-@media (min-width: 1493px) {
+@media (min-width: 1441px) {
   #main-content {
     display: flex;
     display: -webkit-flex;
@@ -154,8 +156,11 @@ body,
     right: 0;
     overflow: auto;
   }
+  .main-info-middle {
+    display: none;
+  }
 
-  .user-info .main-info h3 {
+  .user-info .main-info-large h3 {
     font-size: 1.8rem;
     font-weight: 600;
     border-bottom: 1px dotted #e8e8e8;
@@ -163,47 +168,91 @@ body,
     width: 60%;
     margin: 2rem auto;
   }
-  .user-info .main-info p {
+  .user-info .main-info-large p {
     margin: 0;
     display: inline-block;
   }
-  .user-info .main-info a {
+  .user-info .main-info-large a {
     color: #e8e8e8;
   }
-  .main-info .info-item {
+  .main-info-large .info-item {
     margin-bottom: 1.8rem;
   }
-  .main-info .info-item .item-name {
+  .main-info-large .info-item .item-name {
     font-size: 1.6rem;
     font-weight: 600;
     width: 7rem;
   }
-  .main-info .info-item .item-value {
+  .main-info-large .info-item .item-value {
     font-size: 1.4rem;
     text-align: right;
   }
-  .main-info .info-item .item-special {
+  .main-info-large .info-item .item-special {
     font-weight: 600;
   }
 
-  .resume-info{
+  .resume-info {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
   }
-  .resume-info .resume-info-l,.resume-info .resume-info-r{
+  .resume-info .resume-info-l,
+  .resume-info .resume-info-r {
     flex: 1;
     margin: 1rem;
   }
 }
 
 /*
-    ##Device = Mobile/Ipad
+    ##Device = Laptop/iPad/Mobile
   */
-@media (max-width: 1024px) {
-  .user-info .avatar {
-    padding-top: 100px;
+@media (max-width: 1440px) {
+  #main-content{
+    margin: 0rem auto;
+    max-width: 720px;
   }
+  /* .user-info{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  } */
 
+  .main-info-large {
+    display: none;
+  }
+  .avatar {
+    display: none;
+  }
+  .main-info-middle {
+    box-sizing: border-box;
+    padding: 2rem;
+  }
   
+  .main-info-title{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e8e8e836;
+  }
+  .main-info-title .main-info-title-l,.main-info-title .main-info-title-r{
+    flex: 1;
+    line-height: 4rem;
+  }
+  .main-info-title .main-info-title-l h1{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .main-info-title .main-info-title-r h2{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: right;
+  }
+  .main-info-content{
+    margin-top: 1rem;
+  }
+  .main-info-content .main-info-content-l{
+    line-height: 1.8;
+  }
+  .main-info-content .main-info-content-l a{
+    color: #e8e8e8;
+  }
 }
