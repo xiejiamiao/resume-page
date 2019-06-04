@@ -200,7 +200,7 @@ body,
 /*
     ##Device = Mobile/Ipad
   */
-@media (max-width: 1024px) {
+@media (max-width: 1492px) {
   .user-info .avatar {
     padding-top: 100px;
   }
